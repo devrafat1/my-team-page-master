@@ -1,6 +1,92 @@
-h2{
-    background-color: rgb(165, 22, 141);
-    font-size: 40px;
-    writing-mode: vertical-lr;
-    text-orientation: upright;
+/* Shared Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'PT Serif', serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    padding: 5rem 11.25rem;
+    margin: 0 auto;
+}
+
+/* Header Area */
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-area {
+    width: 50%;
+}
+
+.logo-area h2 {
+    color: #000;
+    font-family: PT Serif;
+    font-size: 2.25rem;
+    font-weight: 700;
+    letter-spacing: -1.62px;
+}
+
+.who-we-are-area {
+    width: 50%;
+}
+
+.who-we-are-area h3 {
+    color: #000;
+    font-family: Poppins;
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.625rem;
+}
+
+.who-we-are-area p {
+    color: #000;
+    font-family: Poppins;
+    font-size: 1.125rem;
+    font-weight: 400;
+    width: 80%;
+}
+
+/* Responsive Header Area */
+@media screen and (max-width: 575px) {
+    .container {
+        padding: 4.438rem 0.75rem;
+    }
+
+    .header-container {
+        flex-direction: column;
+    }
+
+    .logo-area {
+        width: 100%;
+    }
+
+    .logo-area h2 {
+        color: #000;
+        font-family: PT Serif;
+        font-size: 2.25rem;
+        font-weight: 700;
+        letter-spacing: -1.62px;
+        margin-bottom: 2.375rem;
+    }
+
+    .who-we-are-area {
+        width: 100%;
+    }
+
+    .who-we-are-area p {
+        width: 90%;
+        font-size: 0.875rem;
+    }
+    
 }
