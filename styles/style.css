@@ -125,7 +125,7 @@ img {
 .username {
     color: #BDBDBD;
     font-family: Montserrat;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 700;
     text-decoration: underline;
 }
@@ -134,7 +134,7 @@ img {
 /* Responsive For Mobile Devices */
 @media screen and (max-width: 575px) {
     .container {
-        padding: 4.438rem 0.75rem;
+        padding: 2.438rem 0.5rem;
     }
 
     .header-container {
@@ -170,12 +170,12 @@ img {
 
     .person-2 {
         margin-top: 3rem;
-    
+
     }
 
     .person-4 {
         margin-top: 3rem;
-    
+
     }
 
     .person-5 {
@@ -184,5 +184,16 @@ img {
 
     .person-6 {
         margin-top: 3rem;
+    }
+
+    .person-1 p,
+    .person-2 p,
+    .person-3 p,
+    .person-4 p,
+    .person-5 p,
+    .person-6 p {
+        position: absolute;
+        writing-mode: vertical-lr;
+        right: -1.3rem;
     }
 }
